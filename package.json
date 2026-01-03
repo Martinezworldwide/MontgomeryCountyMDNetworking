@@ -4,7 +4,8 @@
   "description": "Networking app for Montgomery County MD chambers of commerce events",
   "main": "app.js",
   "scripts": {
-    "fetch-events": "node scripts/fetch-events-real.js"
+    "fetch-events": "node scripts/fetch-real-events-puppeteer.js",
+    "test-scraper": "node scripts/fetch-real-events-puppeteer.js"
   },
   "keywords": [
     "networking",
@@ -16,7 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "node-fetch": "^2.7.0"
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^21.11.0"
   },
   "devDependencies": {}
 }

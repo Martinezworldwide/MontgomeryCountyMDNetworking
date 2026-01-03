@@ -22,9 +22,13 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Fetch events
+      - name: Install dependencies
         run: |
-          node scripts/fetch-events.js
+          npm install
+      
+      - name: Fetch real events
+        run: |
+          npm run fetch-events
       
       - name: Check for changes
         id: verify-changed-files
