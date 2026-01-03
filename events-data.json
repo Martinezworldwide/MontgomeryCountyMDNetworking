@@ -1,7 +1,9 @@
 {
+  "_note": "These are SAMPLE events. Replace with real events from chamber websites. See scripts/manual-event-entry.md for instructions.",
   "lastUpdated": "2026-01-03T18:47:16.792Z",
   "events": [
     {
+      "_sample": true,
       "title": "Gaithersburg Business Networking Breakfast",
       "chamber": "gaithersburg",
       "date": "2026-01-06",
@@ -11,6 +13,7 @@
       "link": "https://www.gaithersburgmd.gov"
     },
     {
+      "_sample": true,
       "title": "Rockville Chamber Monthly Mixer",
       "chamber": "rockville",
       "date": "2026-01-10",
@@ -20,6 +23,7 @@
       "link": "https://www.rockvillemd.gov"
     },
     {
+      "_sample": true,
       "title": "Bethesda Business Expo",
       "chamber": "bethesda",
       "date": "2026-01-13",
@@ -29,6 +33,7 @@
       "link": "https://www.bethesda.org"
     },
     {
+      "_sample": true,
       "title": "Silver Spring Small Business Workshop",
       "chamber": "silver-spring",
       "date": "2026-01-08",
@@ -38,6 +43,7 @@
       "link": "https://www.silverspringdowntown.com"
     },
     {
+      "_sample": true,
       "title": "Gaithersburg Tech Meetup",
       "chamber": "gaithersburg",
       "date": "2026-01-15",
@@ -47,6 +53,7 @@
       "link": "https://www.gaithersburgmd.gov"
     },
     {
+      "_sample": true,
       "title": "Rockville Women in Business Luncheon",
       "chamber": "rockville",
       "date": "2026-01-17",

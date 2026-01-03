@@ -197,7 +197,8 @@ class EventManager {
             time: event.time || '',
             location: event.location || '',
             description: event.description || '',
-            link: event.link || '#'
+            link: event.link || '#',
+            _sample: event._sample || false // Track if event is sample data
         };
     }
 

@@ -17,7 +17,7 @@ A modern web application for discovering networking events and business opportun
 
 1. Clone this repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Martinezworldwide/MontgomeryCountyMDNetworking.git
 cd MontgomeryCountyMDNetworking
 ```
 
@@ -46,58 +46,76 @@ npx http-server
 
 6. Click **Save**
 
-7. Your site will be available at `https://<your-username>.github.io/MontgomeryCountyMDNetworking/`
+7. Your site will be available at `https://martinezworldwide.github.io/MontgomeryCountyMDNetworking/`
 
-## Updating Events
+## Adding Real Events
 
-Events are stored in `events-data.json`. To update events:
+### Current Status
 
-1. Edit `events-data.json` with new event information
-2. Follow the existing JSON structure:
+The app currently uses sample/mock data. To add **real events** from actual chambers of commerce:
+
+### Option 1: Manual Entry (Recommended for now)
+
+1. Visit chamber websites to find real events:
+   - [Montgomery County Chamber of Commerce](https://web.mcccmd.com/events)
+   - [Gaithersburg-Germantown Chamber](https://www.ggchamber.org/)
+   - [Maryland Chamber of Commerce](https://www.mdchamber.org/events/)
+
+2. Edit `events-data.json` and add real events following the format:
 ```json
 {
-  "lastUpdated": "2024-01-01T00:00:00Z",
+  "lastUpdated": "2026-01-03T00:00:00Z",
   "events": [
     {
-      "title": "Event Name",
+      "title": "Real Event Name",
       "chamber": "gaithersburg",
-      "date": "2024-01-15",
+      "date": "2026-01-15",
       "time": "8:00 AM - 10:00 AM",
-      "location": "Event Location",
-      "description": "Event description",
-      "link": "https://event-link.com"
+      "location": "Actual Event Location",
+      "description": "Real event description",
+      "link": "https://event-registration-url.com"
     }
   ]
 }
 ```
 
-3. Commit and push changes to GitHub
+3. See `scripts/manual-event-entry.md` for detailed instructions
 
-### Automated Event Updates (Optional)
+### Option 2: Automated Scraping (Future)
 
-For automated event updates, you can set up a GitHub Actions workflow to periodically scrape chamber websites and update `events-data.json`. This requires:
+A GitHub Actions workflow is set up (`.github/workflows/update-events.yml`) to automatically update events. However, the scraping scripts need to be customized based on each website's HTML structure.
 
-- A backend service or scraping script
-- GitHub Actions workflow file (`.github/workflows/update-events.yml`)
-- Proper handling of CORS and API limitations
+To implement automated scraping:
+1. Analyze each chamber website's HTML structure
+2. Update `scripts/fetch-events.js` with parsing logic
+3. The workflow will run daily and update events automatically
 
 ## Supported Chambers
 
-- **Gaithersburg Chamber of Commerce**
+- **Gaithersburg-Germantown Chamber of Commerce**
 - **Rockville Chamber of Commerce**
 - **Bethesda-Chevy Chase Chamber of Commerce**
 - **Silver Spring Chamber of Commerce**
+- **Montgomery County Chamber of Commerce**
 
 ## File Structure
 
 ```
 MontgomeryCountyMDNetworking/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styling
-├── app.js              # JavaScript application logic
-├── events-data.json    # Event data storage
-├── .nojekyll           # GitHub Pages configuration
-└── README.md           # This file
+├── index.html              # Main HTML file
+├── styles.css              # CSS styling
+├── app.js                  # JavaScript application logic
+├── events-data.json        # Event data storage
+├── package.json            # Node.js dependencies
+├── scripts/
+│   ├── fetch-events.js     # Event fetching script
+│   └── manual-event-entry.md  # Manual entry guide
+├── .github/
+│   └── workflows/
+│       ├── deploy.yml      # GitHub Pages deployment
+│       └── update-events.yml  # Automated event updates
+├── .nojekyll               # GitHub Pages configuration
+└── README.md               # This file
 ```
 
 ## Browser Support
@@ -113,6 +131,7 @@ MontgomeryCountyMDNetworking/
 - CSS3 (with CSS Grid and Flexbox)
 - Vanilla JavaScript (ES6+)
 - GitHub Pages for hosting
+- GitHub Actions for automation
 
 ## Contributing
 
@@ -130,4 +149,3 @@ This project is open source and available for use.
 ## Contact
 
 For questions or suggestions, please open an issue on GitHub.
-

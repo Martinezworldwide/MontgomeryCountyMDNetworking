@@ -1,0 +1,20 @@
+{
+  "name": "montgomery-county-md-networking",
+  "version": "1.0.0",
+  "description": "Networking app for Montgomery County MD chambers of commerce events",
+  "main": "app.js",
+  "scripts": {
+    "fetch-events": "node scripts/fetch-events.js"
+  },
+  "keywords": [
+    "networking",
+    "chamber-of-commerce",
+    "montgomery-county",
+    "maryland"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
+
