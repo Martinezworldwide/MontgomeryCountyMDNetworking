@@ -4,10 +4,12 @@ class EventManager {
         this.events = [];
         this.filteredEvents = [];
         this.chambers = {
-            'gaithersburg': 'Gaithersburg Chamber of Commerce',
+            'gaithersburg': 'Gaithersburg-Germantown Chamber of Commerce',
             'rockville': 'Rockville Chamber of Commerce',
             'bethesda': 'Bethesda-Chevy Chase Chamber of Commerce',
-            'silver-spring': 'Silver Spring Chamber of Commerce'
+            'silver-spring': 'Silver Spring Chamber of Commerce',
+            'montgomery-county': 'Montgomery County Chamber of Commerce',
+            'maryland': 'Maryland Chamber of Commerce'
         };
         this.init();
     }
