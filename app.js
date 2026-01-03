@@ -48,9 +48,11 @@ class EventManager {
             
             // If no events loaded, use sample data
             if (this.events.length === 0) {
+                console.log('No events loaded, loading sample events');
                 this.loadSampleEvents();
             }
 
+            console.log(`Total events loaded: ${this.events.length}`);
             this.applyFilters();
             loadingEl.style.display = 'none';
             eventsSection.style.display = 'block';
@@ -75,12 +77,18 @@ class EventManager {
             const response = await fetch('events-data.json');
             if (response.ok) {
                 const data = await response.json();
-                if (data.events && Array.isArray(data.events)) {
+                if (data.events && Array.isArray(data.events) && data.events.length > 0) {
                     this.events = data.events.map(event => this.normalizeEvent(event));
+                    console.log(`Loaded ${this.events.length} events from events-data.json`);
+                } else {
+                    console.log('events-data.json has no events, will use sample data');
                 }
+            } else {
+                console.log('events-data.json not found or not accessible, will use sample data');
             }
         } catch (error) {
-            console.log('No local data file found, will try other sources');
+            console.log('Error loading events-data.json:', error.message);
+            console.log('Will use sample data as fallback');
         }
     }
 
@@ -242,10 +250,12 @@ class EventManager {
         });
 
         // Sort by date
+        // Sort by date
         this.filteredEvents.sort((a, b) => {
             return new Date(a.date) - new Date(b.date);
         });
 
+        console.log(`Filtered events: ${this.filteredEvents.length} out of ${this.events.length} total`);
         this.renderEvents();
     }
 
