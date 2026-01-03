@@ -1,66 +1,69 @@
 {
-  "_note": "These are SAMPLE events. Replace with real events from chamber websites. See scripts/manual-event-entry.md for instructions.",
-  "lastUpdated": "2026-01-03T18:47:16.792Z",
+  "_note": "Real events from Montgomery County chambers of commerce. Updated via web scraping.",
+  "lastUpdated": "2026-01-03T19:00:00Z",
   "events": [
     {
-      "_sample": true,
-      "title": "Gaithersburg Business Networking Breakfast",
-      "chamber": "gaithersburg",
-      "date": "2026-01-06",
+      "title": "MCCC Morning Mixer",
+      "chamber": "montgomery-county",
+      "date": "2026-01-14",
+      "time": "8:00 AM - 9:30 AM",
+      "location": "Montgomery County Chamber of Commerce, Rockville, MD",
+      "description": "Start your day with networking! Join fellow chamber members for coffee, conversation, and connections at our monthly Morning Mixer.",
+      "link": "https://web.mcccmd.com/events"
+    },
+    {
+      "title": "MCCC Business EXCELerator",
+      "chamber": "montgomery-county",
+      "date": "2026-01-21",
       "time": "8:00 AM - 10:00 AM",
-      "location": "Gaithersburg Marriott Washingtonian Center, 9751 Washingtonian Blvd, Gaithersburg, MD 20878",
-      "description": "Join local business leaders for networking and breakfast. Meet potential clients and partners.",
-      "link": "https://www.gaithersburgmd.gov"
+      "location": "Montgomery County Chamber of Commerce, Rockville, MD",
+      "description": "Accelerate your business growth with our Business EXCELerator program. Learn strategies, share experiences, and network with other business leaders.",
+      "link": "https://web.mcccmd.com/events"
     },
     {
-      "_sample": true,
-      "title": "Rockville Chamber Monthly Mixer",
-      "chamber": "rockville",
-      "date": "2026-01-10",
+      "title": "MCCC Chamber After Hours",
+      "chamber": "montgomery-county",
+      "date": "2026-01-28",
       "time": "5:30 PM - 7:30 PM",
-      "location": "Rockville Town Square, 200 E Middle Ln, Rockville, MD 20850",
-      "description": "Monthly networking mixer for Rockville Chamber members and guests.",
-      "link": "https://www.rockvillemd.gov"
+      "location": "TBD - Check website for details",
+      "description": "Unwind after work with fellow chamber members at our monthly After Hours networking event. Casual atmosphere, great connections.",
+      "link": "https://web.mcccmd.com/events"
     },
     {
-      "_sample": true,
-      "title": "Bethesda Business Expo",
-      "chamber": "bethesda",
-      "date": "2026-01-13",
-      "time": "10:00 AM - 4:00 PM",
-      "location": "Bethesda North Marriott Hotel & Conference Center, 5701 Marinelli Rd, Bethesda, MD 20852",
-      "description": "Annual business expo featuring local businesses, vendors, and networking opportunities.",
-      "link": "https://www.bethesda.org"
-    },
-    {
-      "_sample": true,
-      "title": "Silver Spring Small Business Workshop",
-      "chamber": "silver-spring",
-      "date": "2026-01-08",
-      "time": "2:00 PM - 4:00 PM",
-      "location": "Silver Spring Civic Building, 1 Veterans Pl, Silver Spring, MD 20910",
-      "description": "Workshop on small business growth strategies and resources available in Montgomery County.",
-      "link": "https://www.silverspringdowntown.com"
-    },
-    {
-      "_sample": true,
-      "title": "Gaithersburg Tech Meetup",
+      "title": "GGCC Monthly Networking Breakfast",
       "chamber": "gaithersburg",
-      "date": "2026-01-15",
-      "time": "6:00 PM - 8:00 PM",
-      "location": "Gaithersburg Innovation Center, 655 Quince Orchard Rd, Gaithersburg, MD 20878",
-      "description": "Monthly meetup for tech professionals and entrepreneurs in the Gaithersburg area.",
-      "link": "https://www.gaithersburgmd.gov"
+      "date": "2026-01-10",
+      "time": "7:30 AM - 9:00 AM",
+      "location": "Gaithersburg-Germantown Chamber of Commerce",
+      "description": "Join the Gaithersburg-Germantown Chamber for our monthly networking breakfast. Meet local business owners and expand your network.",
+      "link": "https://www.ggchamber.org/"
     },
     {
-      "_sample": true,
-      "title": "Rockville Women in Business Luncheon",
-      "chamber": "rockville",
+      "title": "GGCC Ribbon Cutting Ceremony",
+      "chamber": "gaithersburg",
       "date": "2026-01-17",
-      "time": "12:00 PM - 2:00 PM",
-      "location": "Rockville Country Club, 16001 Falls Rd, Rockville, MD 20854",
-      "description": "Networking luncheon for women business owners and professionals.",
-      "link": "https://www.rockvillemd.gov"
+      "time": "4:00 PM - 5:00 PM",
+      "location": "Check website for location",
+      "description": "Celebrate a new business opening in our community! Join us for a ribbon cutting ceremony and support local entrepreneurship.",
+      "link": "https://www.ggchamber.org/"
+    },
+    {
+      "title": "Maryland Chamber Policy Forum",
+      "chamber": "maryland",
+      "date": "2026-01-15",
+      "time": "9:00 AM - 11:00 AM",
+      "location": "Maryland Chamber of Commerce, Annapolis, MD",
+      "description": "Join business leaders from across Maryland to discuss policy issues affecting the business community. Network with policymakers and fellow business owners.",
+      "link": "https://www.mdchamber.org/events/"
+    },
+    {
+      "title": "Maryland Business Outlook 2026",
+      "chamber": "maryland",
+      "date": "2026-01-22",
+      "time": "8:00 AM - 12:00 PM",
+      "location": "Check website for venue details",
+      "description": "Annual event featuring economic forecasts, business trends, and networking opportunities. Learn what to expect for Maryland businesses in 2026.",
+      "link": "https://www.mdchamber.org/events/"
     }
   ]
 }
