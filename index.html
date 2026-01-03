@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montgomery County MD Networking Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Montgomery County MD Networking</h1>
+            <p class="subtitle">Connect with local businesses and events</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Filter Section -->
+            <section class="filters">
+                <div class="filter-group">
+                    <label for="chamber-filter">Chamber:</label>
+                    <select id="chamber-filter" class="filter-select">
+                        <option value="all">All Chambers</option>
+                        <option value="gaithersburg">Gaithersburg</option>
+                        <option value="rockville">Rockville</option>
+                        <option value="bethesda">Bethesda</option>
+                        <option value="silver-spring">Silver Spring</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="date-filter">Date Range:</label>
+                    <select id="date-filter" class="filter-select">
+                        <option value="all">All Dates</option>
+                        <option value="today">Today</option>
+                        <option value="week">This Week</option>
+                        <option value="month">This Month</option>
+                    </select>
+                </div>
+                <button id="refresh-btn" class="refresh-btn">Refresh Events</button>
+            </section>
+
+            <!-- Loading Indicator -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading events...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error-message" class="error-message" style="display: none;"></div>
+
+            <!-- Events Grid -->
+            <section id="events-section" class="events-section">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div id="events-grid" class="events-grid">
+                    <!-- Events will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <p>No events found. Check back later or try refreshing.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Montgomery County MD Networking. Connecting local businesses.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+{
+  "lastUpdated": "2024-01-01T00:00:00Z",
+  "events": [
+    {
+      "title": "Gaithersburg Business Networking Breakfast",
+      "chamber": "gaithersburg",
+      "date": "2024-01-15",
+      "time": "8:00 AM - 10:00 AM",
+      "location": "Gaithersburg Marriott Washingtonian Center, 9751 Washingtonian Blvd, Gaithersburg, MD 20878",
+      "description": "Join local business leaders for networking and breakfast. Meet potential clients and partners.",
+      "link": "https://www.gaithersburgmd.gov"
+    },
+    {
+      "title": "Rockville Chamber Monthly Mixer",
+      "chamber": "rockville",
+      "date": "2024-01-20",
+      "time": "5:30 PM - 7:30 PM",
+      "location": "Rockville Town Square, 200 E Middle Ln, Rockville, MD 20850",
+      "description": "Monthly networking mixer for Rockville Chamber members and guests.",
+      "link": "https://www.rockvillemd.gov"
+    },
+    {
+      "title": "Bethesda Business Expo",
+      "chamber": "bethesda",
+      "date": "2024-01-25",
+      "time": "10:00 AM - 4:00 PM",
+      "location": "Bethesda North Marriott Hotel & Conference Center, 5701 Marinelli Rd, Bethesda, MD 20852",
+      "description": "Annual business expo featuring local businesses, vendors, and networking opportunities.",
+      "link": "https://www.bethesda.org"
+    }
+  ]
+}
+
